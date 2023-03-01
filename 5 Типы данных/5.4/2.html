@@ -1,0 +1,20 @@
+<html>
+  <script>
+    const sumInput = () => {
+      let sum = 0;
+      let arr = [];
+      while (true) {
+        let value = prompt('Введите число', 0);
+
+        if (!isFinite(value) || value === '' || value === null) break;
+
+        arr.push(+value);
+      }
+      arr.forEach((el) => {
+        sum += el;
+      });
+      return sum;
+    };
+    alert(sumInput());
+  </script>
+</html>
